@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+
+
+      <ion-back-button slot="start" defaultHref="/user"></ion-back-button>
+
+      <ion-title>CINEMAGIC</ion-title>
+    </ion-toolbar>
+
+    <ion-grid fixed>
+      <ion-title size="small">
+        <h1>Cinema</h1>
+      </ion-title>
+    </ion-grid>
+  </ion-header>
+  <ion-row>
+    <ion-col>
+      <h1>Películas Nuevas</h1>
+    </ion-col>
+  </ion-row>
+
+
+
+  <app-slideshow-backdrop [peliculas]="peliculas"></app-slideshow-backdrop>
+
+
+  <ion-row>
+    <ion-col>
+      <h3>Cartelera</h3>
+    </ion-col>
+  </ion-row>
+
+
+  <app-slideshow-poster [peliculas]="peliculas"></app-slideshow-poster>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h3>Populares</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-slideshow-pares [peliculas]="populares" (cargarMas)="cargarMas()" [dato]="dato"></app-slideshow-pares>
+
+
+
+
+</ion-content>

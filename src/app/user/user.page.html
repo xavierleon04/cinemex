@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CINEMAGIC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <html>
+  <section class="home-services text-center">
+    <div class="container">
+      <div fxLayout="row wrap">
+        <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+          <br />
+          <center>
+            <h3 style="color:#3AA748"><b>INICIA SESIÓN COMO:</b></h3>
+            <br />
+          </center>
+          <div style="text-align:center;">
+            <table style="margin: 0 auto;">
+              <tbody>
+                <td>
+                  <a class="pointer" [routerLink]="['/tabs/tab1']" routerLinkActive="active">
+
+                    <img src="../../assets/no-avatar.png" alt="user" class="profile-img" width="150px" height="150px"
+                      style="border-radius:100px;" (click)="handleNotify()">
+
+                  </a>
+                  <br />
+                  <h3 style="color:#3AA748"><b>Perfil 1</b></h3>
+                </td>
+                <td><br />
+
+                </td>
+                <td>
+                  <a class="pointer" routerLink="../medico-login" routerLinkActive="active">
+
+                    <img src="../../assets/no-avatar.png" alt="user" class="profile-img" width="150px" height="150px"
+                      style="border-radius:100px;" (click)="handleNotify()">
+
+                  </a>
+                  <br />
+                  <h3 style="color:#3AA748"><b>Perfil 2</b></h3>
+                </td>
+
+                <td>
+
+                </td>
+                <td>
+                  <a class="pointer" [routerLink]="['/kids']" routerLinkActive="active">
+
+                    <img src="../../assets/no-avatar.png" alt="user" class="profile-img" width="150px" height="150px"
+                      style="border-radius:100px;" (click)="handleNotify()">
+
+                  </a>
+                  <br />
+                  <h3 style="color:#3AA748"><b>Niños</b></h3>
+                </td>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </html>
+
+</ion-content>
